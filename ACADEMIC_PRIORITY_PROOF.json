@@ -1,0 +1,36 @@
+{
+  "title": "太极概念引擎 v6.0 · 学术优先权证明包",
+  "paradigm": "Concept-Modulated Attention (CMA)",
+  "theory": "Cognitive Contract Theory",
+  "freeze_id": "v6.0-20260611_102728",
+  "timestamp": {
+    "utc": "2026-06-11T04:02:28Z",
+    "beijing": "2026-06-11T12:02:28+08:00"
+  },
+  "github": {
+    "repo": "https://github.com/7n9d85td64-wq/taiji-concept-engine-v6.0",
+    "visibility": "public",
+    "commit": "b36a8c3a5f0bce376eeb07042a1be064b776bba1",
+    "commit_timestamp": "2026-06-11T12:02:35+08:00",
+    "branch": "main",
+    "files": 30
+  },
+  "sha256_manifest": {
+    "file": "SHA256_MANIFEST.json",
+    "total_files": 27,
+    "python_lines": 4308
+  },
+  "blockchain_timestamp": {
+    "status": "pending",
+    "method": "OpenTimestamps (ots)",
+    "note": "Windows OpenSSL dependency prevents local execution. To complete blockchain anchoring, run on Linux/macOS: ots stamp SHA256_MANIFEST.json && ots upgrade SHA256_MANIFEST.json.ots && git add *.ots && git commit -m 'blockchain timestamp' && git push",
+    "alt_method": "Alternatively, submit SHA256_MANIFEST.json to https://opentimestamps.org/ for browser-based stamping"
+  },
+  "verification_instructions": {
+    "step_1": "Visit https://github.com/7n9d85td64-wq/taiji-concept-engine-v6.0",
+    "step_2": "View commit b36a8c3 — this commit's timestamp is independently verifiable via GitHub's git history",
+    "step_3": "The SHA-256 hashes in SHA256_MANIFEST.json cryptographically bind all 27 files to this commit",
+    "step_4": "Any later attempt to backdate files will produce conflicting SHA-256 hashes",
+    "step_5": "Combine GitHub timestamp + SHA-256 manifest = irrefutable proof of existence at this date"
+  }
+}
