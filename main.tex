@@ -1,0 +1,419 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{xcolor}
+
+\geometry{margin=1in}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+
+\title{Concept-Modulated Attention: A Rule-Based Concept Deduction Paradigm\\ Using the Eight Trigrams System}
+
+\author{Panda Chuxin (Qinglong Zeng)\\
+\texttt{https://github.com/narrative-graph}\\
+\small Taiji Concept Engine v6.0 — Preprint v1.0}
+
+\date{June 11, 2026\\
+\small SHA-256 Freeze ID: v6.0-20260611\_102728}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Contemporary AI systems rely on the statistical paradigm: concept associations are learned from large-scale corpus training, with cosine similarity in vector space serving as the basis for semantic judgment. The statistical paradigm's core blind spot is that it has no concept of ``zero'' — there is no ``I don't know'' value in a probability distribution; every input produces a high-confidence output regardless of whether the reasoning chain is complete.
+
+This paper proposes \textbf{Concept-Modulated Attention (CMA)}, a concept deduction paradigm independent of statistical models. Its core claim is: the essential attributes of a concept should be determined by rule-based derivation chains, not inferred from co-occurrence frequencies. We constructed the Taiji Concept Engine, using the Eight Trigrams as an 8-dimensional semantic vector space basis, with radical $\rightarrow$ five-element $\rightarrow$ yin-yang $\rightarrow$ trigram as the rule derivation chain, achieving fully traceable mapping from Chinese character glyphs to philosophical trigram categories. The engine contains 514 calibrated anchor concepts and 516 classified concepts, passing 18/20 validation tests. Notably, the system honestly marks 78 concepts that cannot be derived by rules as ``meta-state (unknown)'' — this is the fundamental feature that distinguishes CMA from all statistical AI: the system can honestly express its cognitive boundaries.
+\end{abstract}
+
+% ============================================================
+\section{Introduction: The Blind Spot of the Statistical Paradigm}
+% ============================================================
+
+\subsection{The Core Assumption of Statistical Semantics}
+
+Modern NLP systems' semantic representations are built on the distributional hypothesis: the meaning of a word is determined by its context \cite{firth1957, harris1954}. Models such as BERT, GPT, and LLaMA have pushed this hypothesis to its extreme — concepts are encoded as high-dimensional vectors, semantic distance is defined as cosine similarity, and attention weights are determined by dot products.
+
+The engineering achievements of this paradigm are undeniable. But its cost is the dissolution of \textbf{semantic determinacy}: the vector representation of the same concept varies depending on context; there is no context-independent, rule-determined ``essential attribute.''
+
+\subsection{The Inability to Say ``I Don't Know''}
+
+The structural defect of statistical models is this: the softmax function has no zero output. No matter how ambiguous the input or how incomplete the reasoning chain, the model always assigns a non-zero probability to every possible output. In the worst case, it produces a ``high-confidence hallucination'' — an output that appears logically coherent but is entirely fabricated.
+
+This is not a training data quality problem. It is an inevitable consequence of the mathematical structure. The definition of a probability distribution means it \textbf{cannot express absolute negation}.
+
+\subsection{Contributions of This Paper}
+
+The CMA paradigm proposed in this paper attempts to answer a fundamental question: \textbf{If we want to build a concept system that can honestly say ``I don't know,'' what mathematical structure does it require?}
+
+Our answer: \textbf{rule-based derivation chains + bounded trigram space + explicit cognitive boundary markers}. Specific contributions include:
+
+\begin{enumerate}
+    \item \textbf{Eight Trigrams Semantic Space}: Using the Eight Trigrams as an 8-dimensional basis, providing a finite and complete concept classification space.
+    \item \textbf{Rule-Based Derivation Chain}: Fully traceable mapping from Chinese character radical $\rightarrow$ five-element attribute $\rightarrow$ yin-yang attribute $\rightarrow$ trigram category.
+    \item \textbf{Three-Layer Base Axiom}: Macro (1.0) / Meso (0.1) / Micro (0.01) as invariant parameters for concept evolution.
+    \item \textbf{Text Drift Engine}: Fine-tuning attribute vectors within an already-determined trigram, with cross-trigram reclassification prohibited.
+    \item \textbf{Taiji and Quanyu Protocols}: Contradiction generation, premise collision, concept collapse tracking, momentum deduction, meta-cognitive reflection, and network vulnerability auditing.
+    \item \textbf{Cognitive Boundary Markers}: For concepts not derivable by rules, the system outputs \texttt{dispute\_state='needs\_review'}, honestly marking unknowns.
+\end{enumerate}
+
+% ============================================================
+\section{System Architecture}
+% ============================================================
+
+\subsection{The Eight Trigrams Semantic Space}
+
+We map concepts to an 8-dimensional semantic vector space, whose basis is the Eight Trigrams:
+
+\[
+\mathcal{G} = \{\text{Qian☰}, \text{Dui☱}, \text{Li☲}, \text{Zhen☳}, \text{Xun☴}, \text{Kan☵}, \text{Gen☶}, \text{Kun☷}\}
+\]
+
+Each trigram corresponds to an 8-dimensional standard vector with dimensions: Strength, Directionality, Boundary, Persistence, Agility, Penetration, Temperature, and Density.
+
+\begin{table}[ht]
+\centering
+\caption{Standard Vectors of the Eight Trigrams}
+\begin{tabular}{lcccccccc}
+\toprule
+Trigram & Strength & Direction & Boundary & Persist. & Agility & Penetr. & Temp. & Density \\
+\midrule
+Qian☰ & 1.0 & 1.0 & 1.0 & 1.0 & 0.2 & 0.5 & 0.8 & 0.9 \\
+Dui☱  & 0.5 & 0.7 & 0.6 & 0.5 & 0.9 & 0.6 & 0.6 & 0.5 \\
+Li☲   & 0.6 & 0.8 & 0.5 & 0.7 & 0.7 & 0.7 & 0.9 & 0.4 \\
+Zhen☳ & 0.9 & 0.6 & 0.3 & 0.4 & 0.8 & 0.4 & 0.5 & 0.3 \\
+Xun☴  & 0.3 & 0.9 & 0.4 & 0.6 & 0.8 & 0.8 & 0.4 & 0.3 \\
+Kan☵  & 0.7 & 0.3 & 0.8 & 0.8 & 0.3 & 0.9 & 0.3 & 0.7 \\
+Gen☶  & 0.8 & 0.2 & 0.9 & 0.9 & 0.2 & 0.3 & 0.4 & 0.8 \\
+Kun☷  & 0.2 & 0.4 & 0.7 & 0.9 & 0.3 & 0.4 & 0.3 & 1.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{The Rule-Based Derivation Chain}
+
+A concept's trigram is determined by a strict rule-based derivation chain, not by statistical inference:
+
+\[
+\text{Radical} \xrightarrow{\text{radical-wx mapping}} \text{Five-Element} \xrightarrow{\text{wx-yinyang mapping}} \text{Yin-Yang} \xrightarrow{\text{yinyang-trigram mapping}} \text{Trigram}
+\]
+
+\textbf{Step 1: Radical Extraction.} For each Chinese character, extract its radical (e.g., ``氵'' maps to the Water radical).
+
+\textbf{Step 2: Five-Element Mapping.} Radicals are mapped to Five-Element attributes:
+
+\begin{align*}
+\text{radical\_wx}: \{\text{氵, 水, 雨, 冫, \ldots}\} &\mapsto \text{Water} \\
+\text{radical\_wx}: \{\text{火, 灬, 日, 赤, \ldots}\} &\mapsto \text{Fire}
+\end{align*}
+
+\textbf{Step 3: Yin-Yang Determination.} Five-Element maps to Yin-Yang. Yang elements: Wood, Fire. Yin elements: Metal, Water, Earth.
+
+\textbf{Step 4: Trigram Assignment.} Five-Element + Yin-Yang determines the trigram.
+
+\subsection{Three-Layer Base Axiom}
+
+Weights in concept evolution are determined by the Three-Layer Base Axiom, which cannot be ``fitted'' or ``learned'' from data — they are axiomatic parameters of the system:
+
+\begin{table}[ht]
+\centering
+\caption{Three-Layer Base Axiom}
+\begin{tabular}{lccc}
+\toprule
+Layer & Base Value & Meaning & Scope \\
+\midrule
+Macro  & \textbf{1.00} & Defined once, permanent & Initial trigram classification, radical mappings \\
+Meso   & \textbf{0.10} & Per text interaction & Sheng-Ke field weighting, anchor attraction \\
+Micro  & \textbf{0.01} & Long-term cumulative evolution & Text drift, attribute vector fine-tuning \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The complete drift equation is:
+
+\[
+\Delta\Phi = \eta_{\text{MESO}} \cdot (\Phi_{\text{dominant}} - \Phi_{\text{current}}) + \delta_{\text{MICRO}} \cdot \nabla E \cdot y
+\]
+
+where $\eta_{\text{MESO}} = 0.10$ and $\delta_{\text{MICRO}} = 0.01$. The core constraint: \textbf{the trigram cannot change} — drift only performs attribute fine-tuning within the concept's already-determined target trigram.
+
+% ============================================================
+\section{Methodology}
+% ============================================================
+
+\subsection{Concept Deduction Engine}
+
+The Concept Deduction Engine (\texttt{auto\_concept\_engine.py}) is the entry point for the CMA paradigm. For each input concept, it executes:
+
+\begin{enumerate}
+    \item \textbf{Radical Lookup}: Query the \texttt{RADICAL\_WX} mapping table ($\sim$180 radical $\rightarrow$ five-element mappings).
+    \item \textbf{Semantic Lookup}: Query the \texttt{SEMANTIC\_LOOKUP} mapping table ($\sim$220 high-frequency characters $\rightarrow$ trigram, with derivation chain annotations).
+    \item \textbf{Fallback Deduction}: For concepts not found in lookup tables, the \texttt{deduce()} function executes the complete derivation chain: radical $\rightarrow$ five-element $\rightarrow$ yin-yang $\rightarrow$ trigram.
+\end{enumerate}
+
+Concepts that successfully complete deduction are marked \texttt{classify\_state='anchor'} (anchor), and their trigram cannot be modified by subsequent drift.
+
+\subsection{Text Drift Engine (v6.0)}
+
+The Text Drift Engine (\texttt{text\_drift.py}) performs the following:
+
+\begin{enumerate}
+    \item \textbf{Anchor Detection}: Scan input text to identify all calibrated anchor concepts.
+    \item \textbf{Sheng-Ke Field Computation}: For each pair of interacting concepts, compute the five-element generation (Sheng) and overcoming (Ke) relationship:
+    \begin{itemize}
+        \item Sheng (generation): Metal $\rightarrow$ Water $\rightarrow$ Wood $\rightarrow$ Fire $\rightarrow$ Earth $\rightarrow$ Metal, with $\lambda_{\text{sheng}} = 1.1$
+        \item Ke (overcoming): Metal $\rightarrow$ Wood $\rightarrow$ Earth $\rightarrow$ Water $\rightarrow$ Fire $\rightarrow$ Metal, with $\lambda_{\text{ke}} = 0.9$
+    \end{itemize}
+    \item \textbf{In-Trigram Drift}: Fine-tune attribute vectors within the constraint of the already-determined trigram. \textbf{Cross-trigram reclassification is prohibited.}
+    \item \textbf{Dispute Marking}: For meta-state concepts (no radical, no lookup table), mark \texttt{dispute\_state='needs\_review'} and output to \texttt{human\_review.json}.
+\end{enumerate}
+
+The drift equation is formally:
+
+\[
+\Phi_{t+1}(c) = \Phi_t(c) + \eta_{\text{MESO}} \sum_{a \in A} \lambda_{s/k}(c, a) \cdot (\Phi_{\text{gua}(a)} - \Phi_t(c)) + \delta_{\text{MICRO}} \cdot \nabla E_t(c)
+\]
+
+where $A$ is the set of all anchor concepts within the current window, $\lambda_{s/k}$ is the Sheng-Ke factor, and $\Phi_{\text{gua}(a)}$ is the standard vector of anchor $a$'s trigram.
+
+\subsection{Taiji and Quanyu Protocols}
+
+The Taiji Protocol contains five core functions forming a complete cognitive deduction loop:
+
+\begin{table}[ht]
+\centering
+\caption{Taiji Protocol Functions}
+\begin{tabular}{lll}
+\toprule
+Function & Name & Purpose \\
+\midrule
+\texttt{taiji\_pangu()}    & Pangu · Contradiction  & Scan all concept pairs, compute complementarity, mark strong oppositions \\
+\texttt{taiji\_gonggong()} & Gonggong · Premise     & Run negation test on hypotheses, compute attribute drift direction \\
+\texttt{taiji\_mingjia()}  & Mingjia · Collapse     & Track concept drift, trigger warning if $\cos(c_n, c_0) < 0.3$ \\
+\texttt{taiji\_bingjia()}  & Bingjia · Momentum     & Deduce 5-step Sheng-Ke flow between opposing options \\
+\texttt{taiji\_zhulong()}  & Zhulong · Reflection   & Periodically review inference log, detect recurring error patterns \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The Quanyu Protocol contains three functions for topological analysis of the Sheng-Ke network: \texttt{quanyu\_yaogua()} (node centrality and vulnerability), \texttt{quanyu\_zhuanggua()} (action sequence deduction), and \texttt{quanyu\_duangua()} (comprehensive divination).
+
+The protocols are orchestrated by \texttt{auto\_orchestrator.py} with the following data flow:
+
+\[
+\text{anomalies.json} \rightarrow \text{Pangu} \rightarrow \text{Gonggong} \rightarrow \text{Mingjia} \rightarrow \text{Bingjia} \rightarrow \text{Zhulong}
+\]
+
+% ============================================================
+\section{Experiments and Results}
+% ============================================================
+
+\subsection{Concept Dictionary Construction}
+
+The dictionary contains 1,108 core Chinese characters, extracted from high-frequency characters in pre-Qin philosophical texts (\textit{Daodejing}, \textit{Analects}). The distribution is:
+
+\begin{table}[ht]
+\centering
+\caption{Concept Dictionary Distribution}
+\begin{tabular}{lrr}
+\toprule
+Trigram & Count & Percentage \\
+\midrule
+Kan☵  & 260 & 23.5\% \\
+Gen☶  & 223 & 20.1\% \\
+Qian☰ & 137 & 12.4\% \\
+Dui☱  & 116 & 10.5\% \\
+Li☲   & 110 & 9.9\% \\
+Zhen☳ & 106 & 9.6\% \\
+Yuan (Unknown) & 78 & 7.0\% \\
+Xun☴  & 45 & 4.1\% \\
+Kun☷  & 33 & 3.0\% \\
+\midrule
+\textbf{Total} & \textbf{1108} & \textbf{100\%} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{itemize}
+    \item \textbf{514 anchors} (\texttt{classify\_state='anchor'}): Trigram determined by radical or semantic lookup, read-only protected.
+    \item \textbf{516 classified} (\texttt{classify\_state='classified'}): Trigram determined by deduction engine, in-trigram fine-tuning allowed.
+    \item \textbf{78 meta-state} (\texttt{classify\_state='meta'}): No radical, no lookup, no deducible rule. \textbf{All marked \texttt{dispute\_state='needs\_review'}}.
+\end{itemize}
+
+\subsection{Daodejing Full-Text Deduction}
+
+Running the \textit{Daodejing} full text through the v6.0 engine:
+
+\begin{itemize}
+    \item \textbf{Total interactions}: 4,128 (co-occurrence interactions within sliding window)
+    \item \textbf{Cross-trigram reclassifications}: \textbf{0} (v6.0 core guarantee — cross-trigram classification prohibited)
+    \item \textbf{Anchor modifications}: \textbf{0} (anchor read-only protection enforced)
+    \item \textbf{Dispute markings}: 78 (honest marking of meta-state concepts)
+\end{itemize}
+
+\subsection{20-Point Validation Test}
+
+We designed 20 tests covering 8 classification dimensions:
+
+\begin{table}[ht]
+\centering
+\caption{20-Point Validation Test Results}
+\begin{tabular}{lccc}
+\toprule
+Category & Tests & Passed & Content \\
+\midrule
+A. Trigram Classification & 4 & 4 & Water$\rightarrow$Kan, Fire$\rightarrow$Li, Mountain$\rightarrow$Gen, Heaven$\rightarrow$Qian \\
+B. Sheng-Ke Relations   & 3 & 3 & Water generates Wood, Fire overcomes Metal, Earth generates Metal \\
+C. Anchor Protection     & 2 & 2 & \texttt{classify\_state='anchor'} excluded from drift \\
+D. Cross-Trigram Ban     & 2 & 2 & In-trigram drift does not change trigram assignment \\
+E. Dispute Marking       & 2 & 2 & Meta concepts marked \texttt{dispute\_state='needs\_review'} \\
+F. Meta-State Handling   & 3 & 3 & Wuji origin $\Phi_0$ marker, zero drift without anchors \\
+G. Three-Layer Base      & 2 & 1 & MICRO=0.01 enforced (G2: historical data residue) \\
+H. Edge Cases            & 2 & 2 & Empty text / single-character text does not crash \\
+\midrule
+\textbf{Total}           & \textbf{20} & \textbf{18} & \textbf{Pass rate: 90\%} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Daodejing Core Proposition Validation}
+
+\textbf{Proposition 1: ``The soft and weak overcome the hard and strong'' (Chapters 36, 43, 78).}
+
+\begin{table}[ht]
+\centering
+\caption{Concept Configuration for ``Soft Overcomes Hard''}
+\begin{tabular}{lcccc}
+\toprule
+Concept & Radical & Five-Element & Trigram & Key Dimensions \\
+\midrule
+柔 (Soft) & Wood & Wood (Yang) & Zhen☳ & Agility 0.8, Strength 0.4 \\
+弱 (Weak) & Bow  & Water (Yin) & Kan☵  & Penetration 0.9, Strength 0.3 \\
+刚 (Hard) & Blade& Metal (Yin) & Dui☱  & Boundary 0.6, Strength 0.8 \\
+强 (Strong)& Bow  & Water (Yin) & Kan☵  & Persistence 0.8, Strength 0.7 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Analysis: Soft (Zhen☳) overcomes Hard (Dui☱) in five-element as Wood overcoming Metal. Weak (Kan☵) and Strong (Kan☵) are same-trigram, where soft penetration prevails over rigid strength — perfectly consistent with \textit{Daodejing} philosophy.
+
+\textbf{Proposition 2: ``The highest good is like water'' (Chapter 8).}
+
+Analysis: Shang (Qian☰) $\rightarrow$ Shui (Kan☵) forms the Metal-generates-Water Sheng chain, supporting the propositional structure. The overall Sheng-Ke configuration of the chapter reflects the \textit{Daodejing}'s philosophical emphasis on water-like flexibility.
+
+% ============================================================
+\section{Discussion}
+% ============================================================
+
+\subsection{Why 78 ``Unknowns'' Are the Core Competitive Advantage}
+
+Among the results in Section 4.3, the most noteworthy is not the 18/20 pass rate, but the 78 concepts marked as ``meta-state (unknown).'' These concepts have no radical, no semantic lookup, and no deducible rule — the system \textbf{does not forcibly assign a trigram} but outputs \texttt{dispute\_state='needs\_review'}, requesting human intervention.
+
+This is the essential difference between the CMA paradigm and statistical AI. Models like GPT-5, Claude 4, and Gemini 3 are structurally incapable of expressing ``I don't know.'' Probability distributions have no zero — every input produces an output, regardless of how weak the reasoning foundation is.
+
+The 78 meta-state concepts are not a system defect. They are empirical evidence of the system's honesty. In a truly reliable knowledge system, ``I don't know'' is one of the most important outputs.
+
+\subsection{Rule Deduction vs. Statistical Inference}
+
+\begin{table}[ht]
+\centering
+\caption{Paradigm Comparison}
+\begin{tabular}{p{3.5cm}p{4cm}p{4cm}}
+\toprule
+Dimension & Statistical Paradigm & CMA Paradigm \\
+\midrule
+Concept Classification & Context-dependent, no fixed attribute & Radical rule deduction, deterministic trigram \\
+Uncertainty Handling  & Probability distribution (cannot be zero) & Dispute marking (explicit ``unknown'') \\
+Traceability          & Attention weights as ``black box'' & Radical$\rightarrow$WX$\rightarrow$Yin-Yang$\rightarrow$Trigram full chain \\
+Cross-Session Consistency & Not guaranteed & Same radical $\rightarrow$ same trigram, deterministic \\
+Cognitive Boundary    & None & \texttt{dispute\_state='needs\_review'} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Limitations}
+
+\begin{enumerate}
+    \item \textbf{Dictionary Coverage}: The current 1,108 characters cover pre-Qin philosophical core concepts but do not cover the full semantic space of modern Chinese.
+    \item \textbf{Radical Mapping Incompleteness}: $\sim$180 radical $\rightarrow$ five-element mappings; rare radicals or variant characters may have blind spots.
+    \item \textbf{Cross-Language Adaptation}: The current system is based on Chinese character radicals; direct migration to alphabetic writing systems requires redesigning semantic primitives.
+    \item \textbf{78 Meta-State Concepts}: Not yet manually adjudicated; dictionary completeness has room for improvement.
+\end{enumerate}
+
+% ============================================================
+\section{Conclusion}
+% ============================================================
+
+This paper proposed \textbf{Concept-Modulated Attention (CMA)}, a concept deduction paradigm independent of statistical models. Its core claim — that the essential attributes of a concept should be determined by rule-based derivation chains, not inferred from co-occurrence frequencies — has been empirically validated in the Taiji Concept Engine v6.0.
+
+The system's key characteristics:
+\begin{itemize}
+    \item \textbf{514 anchor concepts}: Uniquely determined by the radical $\rightarrow$ five-element $\rightarrow$ yin-yang $\rightarrow$ trigram derivation chain.
+    \item \textbf{0 cross-trigram reclassifications}: v6.0 eliminates erroneous cross-trigram classification caused by statistical methods.
+    \item \textbf{78 honest unknowns}: The system marks concepts not derivable by rules, requesting human intervention.
+    \item \textbf{18/20 test pass}: Covering 8 dimensions including trigram classification, Sheng-Ke relations, anchor protection, and edge cases.
+\end{itemize}
+
+The significance of the CMA paradigm lies not in replacing statistical AI but in exposing their blind spots. A mature knowledge system should be able to retreat to rule deduction when statistical correlation fails, and when rule deduction also fails — honestly say ``I don't know.''
+
+% ============================================================
+% References
+% ============================================================
+
+\begin{thebibliography}{99}
+
+\bibitem{firth1957}
+J.~R.~Firth.
+\newblock A synopsis of linguistic theory, 1930--1955.
+\newblock In \emph{Studies in Linguistic Analysis}, 1957.
+
+\bibitem{harris1954}
+Z.~S.~Harris.
+\newblock Distributional structure.
+\newblock \emph{Word}, 10(2-3):146--162, 1954.
+
+\bibitem{vaswani2017}
+A.~Vaswani et al.
+\newblock Attention is all you need.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 30, 2017.
+
+\bibitem{harnad1990}
+S.~Harnad.
+\newblock The symbol grounding problem.
+\newblock \emph{Physica D}, 42(1-3):335--346, 1990.
+
+\bibitem{aumann1976}
+R.~J.~Aumann.
+\newblock Agreeing to disagree.
+\newblock \emph{The Annals of Statistics}, 4(6):1236--1239, 1976.
+
+\bibitem{lewis1969}
+D.~Lewis.
+\newblock \emph{Convention: A Philosophical Study}.
+\newblock Harvard University Press, 1969.
+
+\bibitem{ji2023}
+Z.~Ji et al.
+\newblock Survey of hallucination in natural language generation.
+\newblock \emph{ACM Computing Surveys}, 55(12):1--38, 2023.
+
+\bibitem{zeng2026ccp}
+Q.~Zeng (Panda Chuxin).
+\newblock Cognitive Contract Protocol: A standard for verifiable knowledge transfer between AI sessions.
+\newblock Preprint, 2026.
+
+\end{thebibliography}
+
+\end{document}

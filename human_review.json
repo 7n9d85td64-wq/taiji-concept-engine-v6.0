@@ -1,0 +1,708 @@
+{
+  "generated_at": "2026-06-11T10:15:32",
+  "total_disputes": 78,
+  "disputes": [
+    {
+      "concept": "蕊",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "株",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "增",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "烟",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "香",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "栏",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "沾",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "弟",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "灶",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "钱",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "--",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "材",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "响",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "锤",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "钻",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "性",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "棵",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "温",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "喜",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "蓄",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "炊",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "构",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "零",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "跃",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "落",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "减",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "浓",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "锯",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "烦",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "他",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "鼎",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "燥",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "恨",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "助",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "炎",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "柱",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "它",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "篇",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "句",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "梯",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "销",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "锅",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "问",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "棋",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "这",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "滚",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "植",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "跳",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "测",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "臭",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "锈",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "湿",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "触",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "你",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "那",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "钳",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "苦",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "铺",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "喧",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "药",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "钥",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "浅",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "她",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "英",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "旁",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "转",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "丑",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "游",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "聚",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "著",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "炕",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "飞",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "机",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "滑",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "洗",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "板",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "桥",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    },
+    {
+      "concept": "蒙",
+      "assigned_gua": "元",
+      "closest_gua": "未知",
+      "closest_sim": 0.0,
+      "drift_delta": 0.0,
+      "reason": "元态概念无锚点牵引，漂移量为0，无极原点Φ₀状态",
+      "review_action": "请人工判定此概念的最终卦象归属（当前无任何锚点参考）"
+    }
+  ]
+}

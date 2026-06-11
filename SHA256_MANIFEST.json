@@ -1,0 +1,163 @@
+{
+  "freeze_id": "v6.0-20260611_102728",
+  "freeze_timestamp_utc": "2026-06-11T02:27:28Z",
+  "project": "太极概念引擎 (Taiji Concept Engine)",
+  "theory": "认知契约论 (Cognitive Contract Theory)",
+  "paradigm": "概念调制注意力 (Concept-Modulated Attention)",
+  "version": "v6.0",
+  "total_python_lines": 4308,
+  "total_files": 27,
+  "files": {
+    "text_drift.py": {
+      "sha256": "87004ca9499c13b8b7f077ef16dce2efc0d34d3ee94135a0ee9ae2bd27585fba",
+      "size_bytes": 23633,
+      "size_mb": 0.02,
+      "lines": 514
+    },
+    "auto_concept_engine.py": {
+      "sha256": "7242f88d3b72c6b1023dca61b01ae436cde6b40b6d53ca1fac4b383f06f315c8",
+      "size_bytes": 16069,
+      "size_mb": 0.02,
+      "lines": 309
+    },
+    "auto_orchestrator.py": {
+      "sha256": "3c86c910d90507a43ecca38c13e6d4a4ff6bf9c98441028e7ba2129834649422",
+      "size_bytes": 26195,
+      "size_mb": 0.02,
+      "lines": 691
+    },
+    "auto_validate_concepts.py": {
+      "sha256": "705224c1f4fd10d08a57a61888f007041cb66924492a2a55f25bb92a56f76e57",
+      "size_bytes": 8025,
+      "size_mb": 0.01,
+      "lines": 200
+    },
+    "auto_flag_anomalies.py": {
+      "sha256": "cd2e77153428b073dcf47dfcae521e5ddf4900e5586027910b2761d281ec44d0",
+      "size_bytes": 5821,
+      "size_mb": 0.01,
+      "lines": 142
+    },
+    "auto_iterate.py": {
+      "sha256": "7df22c7af4e1cb27684906537fde05895523952012a4638f12e290e617d5d472",
+      "size_bytes": 23426,
+      "size_mb": 0.02,
+      "lines": 528
+    },
+    "auto_activate.py": {
+      "sha256": "3ed7a8d5dab1483af7c8a9497e45ebdecfb8cc2690489da717702fd6393d354f",
+      "size_bytes": 7829,
+      "size_mb": 0.01,
+      "lines": 207
+    },
+    "auto_deduce.py": {
+      "sha256": "9c9df906b823ba08cfba7a40fad6b16acac82dbd2d020e860d5b25c8210ad83c",
+      "size_bytes": 3080,
+      "size_mb": 0.0,
+      "lines": 68
+    },
+    "auto_merge_dicts.py": {
+      "sha256": "df42179fe3e946125cd5c8ea1ca755d10e6e5be3dfb8cbb666dcb3157e84f59b",
+      "size_bytes": 4207,
+      "size_mb": 0.0,
+      "lines": 123
+    },
+    "semantic_anchor.py": {
+      "sha256": "d2ec001e2fec3bafd0435aa7b21940fdea9b3b8801d27f454fa2467cfe5fbddb",
+      "size_bytes": 10396,
+      "size_mb": 0.01,
+      "lines": 284
+    },
+    "run_20_tests.py": {
+      "sha256": "4b422edb3c53e5afbb3c826ecc2d839727015779914d2d3fc6a2c44271119a6f",
+      "size_bytes": 23477,
+      "size_mb": 0.02,
+      "lines": 511
+    },
+    "cleanup_dicts.py": {
+      "sha256": "cf55f5b9bb52d07c92342d8f571caf266d0c4effe176c39fcda3841f55a6a682",
+      "size_bytes": 3083,
+      "size_mb": 0.0,
+      "lines": 109
+    },
+    "_v5_reset.py": {
+      "sha256": "6d8e458b3e8bedd30fa494ed1fe434e879ff38a41e8846070e3fd7d594cca896",
+      "size_bytes": 4192,
+      "size_mb": 0.0,
+      "lines": 118
+    },
+    "token_server.py": {
+      "sha256": "9a2eab7d15ebb7fcb6ab271fde6f596e80d9b2b162295d3c81560fc77dcb7bf8",
+      "size_bytes": 9632,
+      "size_mb": 0.01,
+      "lines": 264
+    },
+    "anchor.py": {
+      "sha256": "3ef51b0afcacc68a900b434973867f30d55d069a729dbd686747f72f140ff881",
+      "size_bytes": 5411,
+      "size_mb": 0.01,
+      "lines": 145
+    },
+    "quick_anchor.py": {
+      "sha256": "1c157ae7f1de747cf10bc44baf326079e3f46b7ec6937ba8297f1d8df2d7b125",
+      "size_bytes": 3393,
+      "size_mb": 0.0,
+      "lines": 95
+    },
+    "concept_dict.json": {
+      "sha256": "29e6848ef597e61e45e486c88bf0c5a68197fd8baae5197e87e7f44d84c9d7f4",
+      "size_bytes": 44913796,
+      "size_mb": 42.83
+    },
+    "human_review.json": {
+      "sha256": "b9da52757bb37cc142ed8627bc0f8b827dfea077a450f579009e6a9f7219860e",
+      "size_bytes": 27469,
+      "size_mb": 0.03
+    },
+    "test_report_20.json": {
+      "sha256": "ddc96c4f6c53dcb76e778d7c8a4e0ac0d91bbf03c20a1650b6439dcdeaa35f49",
+      "size_bytes": 3139,
+      "size_mb": 0.0
+    },
+    "audit_report_v1.0.md": {
+      "sha256": "3799969999b2436bf687537d52138cf13b9c654242c7b454ce1c4f319ece850b",
+      "size_bytes": 13687,
+      "size_mb": 0.01
+    },
+    "drift_tracking.md": {
+      "sha256": "fb28de0fc57a307b4cd8b92ba50692df8437bb0ca1225817211a07b0ffa9c991",
+      "size_bytes": 9870,
+      "size_mb": 0.01
+    },
+    "PROTOCOL.md": {
+      "sha256": "4c963bca1dad1f23ccac355ae9dbd078dc438e4488a2d3b927289c5ee08634ba",
+      "size_bytes": 4647,
+      "size_mb": 0.0
+    },
+    "spec_math.md": {
+      "sha256": "93e6c1b1dc1cdbada828f1c7a11d5ccc24747bf31fb8fb9cf478d2b40ce94adf",
+      "size_bytes": 5752,
+      "size_mb": 0.01
+    },
+    "README.md": {
+      "sha256": "9497b0271950646036cf34517afffa86f7d93e5b8aa4c5efa17dfa9f9e54eea3",
+      "size_bytes": 2451,
+      "size_mb": 0.0
+    },
+    "issues.md": {
+      "sha256": "25b6ee1e7473fa2ad5c4bba563a602ff805cc8905f2184c83c4b6ed6aa8ad6db",
+      "size_bytes": 4563,
+      "size_mb": 0.0
+    },
+    "preprint_cma_v1.0.md": {
+      "sha256": "4cde5feadf02b2e2d5f7b95c69ad3766ca98b00011c5fadd3a18e784412e1511",
+      "size_bytes": 21834,
+      "size_mb": 0.02
+    },
+    "main.tex": {
+      "sha256": "e1d830f48ecd2643cb796f04b999f28dc446a0a941dda0838fdd8ab04a1415b3",
+      "size_bytes": 22467,
+      "size_mb": 0.02
+    }
+  }
+}

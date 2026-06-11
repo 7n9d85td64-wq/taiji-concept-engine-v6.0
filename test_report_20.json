@@ -1,0 +1,161 @@
+{
+  "timestamp": "2026-06-11T10:15:11",
+  "summary": {
+    "passed": 17,
+    "failed": 1,
+    "skipped": 2,
+    "total": 20
+  },
+  "by_category": {
+    "A": {
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0,
+      "total": 4
+    },
+    "B": {
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "total": 3
+    },
+    "C": {
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0,
+      "total": 2
+    },
+    "D": {
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0,
+      "total": 2
+    },
+    "E": {
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0,
+      "total": 2
+    },
+    "F": {
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "total": 3
+    },
+    "G": {
+      "passed": 1,
+      "failed": 1,
+      "skipped": 0,
+      "total": 2
+    },
+    "H": {
+      "passed": 0,
+      "failed": 0,
+      "skipped": 2,
+      "total": 2
+    }
+  },
+  "results": [
+    {
+      "test_id": "A1",
+      "passed": true,
+      "details": "钢 卦象正确"
+    },
+    {
+      "test_id": "A2",
+      "passed": true,
+      "details": "海 卦象正确"
+    },
+    {
+      "test_id": "A3",
+      "passed": true,
+      "details": "山 卦象正确"
+    },
+    {
+      "test_id": "A4",
+      "passed": true,
+      "details": "仁 卦象正确"
+    },
+    {
+      "test_id": "B1",
+      "passed": true,
+      "details": "全部生克一致"
+    },
+    {
+      "test_id": "B2",
+      "passed": true,
+      "details": "全部生克一致"
+    },
+    {
+      "test_id": "B3",
+      "passed": true,
+      "details": "全部生克一致"
+    },
+    {
+      "test_id": "C1",
+      "passed": true,
+      "details": "514锚点, 0违规漂移"
+    },
+    {
+      "test_id": "C2",
+      "passed": true,
+      "details": "514锚点, 0违规漂移"
+    },
+    {
+      "test_id": "D1",
+      "passed": true,
+      "details": "516个已定卦, 0违规"
+    },
+    {
+      "test_id": "D2",
+      "passed": true,
+      "details": "卦内微调，0个余弦相似度显著降低"
+    },
+    {
+      "test_id": "E1",
+      "passed": true,
+      "details": "78条争议"
+    },
+    {
+      "test_id": "E2",
+      "passed": true,
+      "details": "格式正确"
+    },
+    {
+      "test_id": "F1",
+      "passed": true,
+      "details": "78元态, 0被改变"
+    },
+    {
+      "test_id": "F2",
+      "passed": true,
+      "details": "78/78元态有无极原点标记"
+    },
+    {
+      "test_id": "F3",
+      "passed": true,
+      "details": "78/78元态有漂移追踪"
+    },
+    {
+      "test_id": "G1",
+      "passed": true,
+      "details": "MICRO_BASE=0.01:True, MESO_BASE=0.10:True"
+    },
+    {
+      "test_id": "G2",
+      "passed": false,
+      "details": "255个概念超0.30漂移上限"
+    },
+    {
+      "test_id": "H1",
+      "passed": "SKIP",
+      "details": "需手动运行 text_drift.py 空文本验证"
+    },
+    {
+      "test_id": "H2",
+      "passed": "SKIP",
+      "details": "需手动运行 text_drift.py 空文本验证"
+    }
+  ]
+}
